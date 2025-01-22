@@ -5,7 +5,7 @@ import Description from "./components/Description";
 
 const App = () => {
   return (
-    <Box position="relative" minH="100vh" overflow="hidden">
+    <Box position="relative" minH="100vh" overflow="hidden" pb="50px">
       <Box
         bgColor="blackAlpha.900"
         position="absolute"

@@ -74,10 +74,10 @@ const Form = () => {
               isRequired
             >
               <option value="svm">Support Vector Machine (SVM)</option>
+              <option value="knn">K-Nearest Neighbors (KNN)</option>
               <option value="rf">Random Forest (RF)</option>
-              <option value="dt">Decision Tree (DT)</option>
               <option value="nb">Naive Bayes (NB)</option>
-              <option value="nn">Neural Network (NN)</option>
+              <option value="xgb">XGBoost</option>
             </Select>
           </FormControl>
           <Button

@@ -1,8 +1,17 @@
 import { Box, Text } from "@chakra-ui/react";
+import { useEffect, useRef } from "react";
 
-const ResultDisplay = ({ url }) => {
+const ResultDisplay = ({ url, prediction, model }) => {
+  const ref = useRef(null);
+  useEffect(() => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [ref.current]);
+
   return (
     <Box
+      ref={ref}
       bg="whiteAlpha.800"
       borderRadius="md"
       boxShadow="lg"
@@ -15,13 +24,16 @@ const ResultDisplay = ({ url }) => {
       <Text fontSize="lg" fontWeight="bold">
         The URL{" "}
         <Text as="span" color="brand.500">
-          {url || "https://example.com"}
+          {url}
         </Text>{" "}
         is detected to be a{" "}
-        <Text as="span" color="green.500">
-          benign URL
+        <Text
+          as="span"
+          color={prediction === "benign" ? "green.500" : "red.500"}
+        >
+          {prediction} URL{" "}
         </Text>
-        (80% accuracy).
+        using the {model} model.
       </Text>
     </Box>
   );

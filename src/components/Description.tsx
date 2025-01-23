@@ -25,7 +25,7 @@ const Description = () => {
     "A simple web application to detect malicious URLs using machine learning models.";
   const text2 = "by: Group 5";
   const text3 =
-    "✅Prince Ajayi (215221) \n✅Peter Kayode (208077) \n✅Chidinma Nwatu (XXXXX) \n✅Precious Ogbolu (XXXXX) \n✅Blessing Akinrinola (XXXXX) \n✅Emmanuel Daniel (XXXXX)";
+    "✅Prince Ajayi (215221) \n✅Peter Kayode (208077) \n✅Chidinma Nwatu (214890) \n✅Precious Ogbolu (214894) \n✅Blessing Akinrinola (214857) \n✅Emmanuel Daniel (214870)";
 
   const [showSecondBlock, setShowSecondBlock] = useState(false);
   const [showThirdBlock, setShowThirdBlock] = useState(false);

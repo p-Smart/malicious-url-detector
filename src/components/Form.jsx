@@ -117,7 +117,6 @@ const Form = () => {
             <FormLabel>URL</FormLabel>
             <Input
               disabled={response}
-              type="url"
               placeholder="Enter the URL to check"
               focusBorderColor="brand.400"
               value={data.url}

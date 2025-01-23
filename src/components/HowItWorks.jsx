@@ -1,4 +1,5 @@
-import { Box, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Button, SimpleGrid, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const HowItWorks = () => {
   return (
@@ -35,6 +36,10 @@ const HowItWorks = () => {
           </Text>
         </Box>
       </SimpleGrid>
+
+      <Button colorScheme="purple" w="100%" mt="50px" as={Link} to="/howitworks">
+        See Details
+      </Button>
     </Box>
   );
 };
